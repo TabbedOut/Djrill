@@ -5,7 +5,8 @@
 import sys
 from django.conf import settings
 
-APP='djrill'
+APP = 'djrill'
+EVENTS_APP = 'djrill.events'
 
 settings.configure(
     DEBUG=True,
@@ -20,7 +21,7 @@ settings.configure(
         'django.contrib.contenttypes',
         'django.contrib.sessions',
         'django.contrib.admin',
-        APP,
+        APP, EVENTS_APP
     )
 )
 
